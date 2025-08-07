@@ -6,7 +6,7 @@
 body{
     font-family: sans-serif;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .navbar{
     display: flex;
