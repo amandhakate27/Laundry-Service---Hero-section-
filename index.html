@@ -12,14 +12,23 @@
     <nav>
         <div class="navbar">
             <span class="nav-logo">WashGo</span>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="nav-links">
                 <li>Home</li>
                 <li>Services</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
-            </div>
-            <div class="nav-user">
-                <span class="user">Username</span>
+                
+                <div class="nav-user">
+                    <span class="user">Username</span>
+                </div>
             </div>
 
         </div>
@@ -58,7 +67,14 @@
 
 
     </main>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
 
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>
